@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: blue;
+  padding: 15px 15%;
+}
+nav a {
+  color: black;
+}
+.container {
+  width: 70%;
+  margin: 30px auto 0;
+  overflow: hidden;
+  max-height: calc(100vh - 110px);
+  padding: 25px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.notice {
+  transition: 0.8s;
+  border: 1px solid brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  background-color: white;
+  position: relative;
+}
+.notice:hover {
+  background-color: #aaa;
+}
+.notice:not(:last-child) {
+  margin-bottom: 15px;
+}
+.notice span {
+  background-color: red;
+  color: white;
+  cursor: move;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+.notice span:hover {
+  background-color: brown;
+}
+.notice h2 {
+  margin-bottom: 10px;
+}
+.notice p {
+  height: fit-content;
+  word-break: break-all;
+}
+.open-form {
+  background-color: brown;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 15px;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+form {
+  padding: 10px;
+}
+textarea {
+  resize: none;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+}
+.form-buttons {
+  margin-left: auto;
+  width: fit-content;
+  margin-top: 5px;
+}
+.form-buttons input {
+  background-color: green;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.form-buttons button {
+  background-color: brown;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+.smallwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: brown;
+}
+.data {
+  overflow: auto;
+  max-height: calc(500px - 61px);
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: brown;
+}
+.data:not(:has(:first-child)) {
+  text-align: center;
+  color: red;
+}
+.data:not(:has(:first-child))::before {
+  content: "No Data To Show";
+}
